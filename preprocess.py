@@ -57,6 +57,6 @@ if __name__ == '__main__':
     data = pd.read_parquet('./output_data.parquet')
     print('preprocess begins.')
     new_data = preprocess(data)
-    output_file = './data_clean.parquet'
+    output_file = './data_clean_30.parquet'
     new_data.to_parquet(output_file, index=False)
     print(f'DataFrame 已保存为 {output_file}')
